@@ -1,7 +1,6 @@
-import numpy as np
+import pandas as pd
+import termcolor 
 
-list1 = [1,2,3,4,5]
-list2 = [6,7,8,9,10]
-arr1 = np.array(list1,list2)
+df_capitals = pd.DataFrame([['England', 'London'], ['Austria','Vienna'],['France','Paris'],['Italy','Rome'],['Germany','Berlin'],['Switzerland','Bern'],['Belgium','Brussels']], columns=['Country', 'Capital '])
 
-print(arr1)
+df_capitals.to_csv(r"C:\Sharing\Capitals.csv")
